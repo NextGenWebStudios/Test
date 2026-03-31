@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Creator Toolkit</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.7/dist/ffmpeg.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white p-10">
+  <h1 class="text-4xl font-bold mb-6">Creator Dashboard</h1>
+
+  <section>
+    <label>Niche:</label>
+    <input type="text" id="niche" class="rounded px-2 py-1 text-black" placeholder="Enter niche...">
+  </section>
+
+  <section class="mt-4">
+    <label>Max Video Length (seconds):</label>
+    <input type="number" id="maxLength" class="rounded px-2 py-1 text-black" value="60">
+  </section>
+
+  <section class="mt-6">
+    <button id="generateVideo" class="px-4 py-2 bg-purple-600 rounded hover:bg-purple-400">Generate Video</button>
+  </section>
+
+  <section class="mt-6">
+    <video id="previewVideo" controls class="w-full rounded"></video>
+  </section>
+
+  <script src="js/videoGenerator.js"></script>
+  <script src="js/bRollLibrary.js"></script>
+  <script src="js/aiHookGenerator.js"></script>
+</body>
+</html>
